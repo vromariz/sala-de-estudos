@@ -13,12 +13,34 @@ li {
 .list{
     list-style: square;
 }
-
+/**
 #msg{
     font-family: monospace;
-}
+}**/
 
 .light-theme{
-    color: black;
-    background: #8e8cff8a;
+   /** color: black;
+    background: #6967ee8a;**/
+    --bg:var(--purple);
+    --fontColor:var(--black)
+}
+
+.dark-theme{
+    --bg:var(--black)
+    --fontColor:var(--purple)
+}
+
+:root{
+    --purple: #6967ee8a;
+    --white: #ffffff;
+    --black: #000000;
+}
+/**o * se refere a todos os elementos da pagina **/
+* {
+    color:  var(--fontColor);
+    font-family: helvetica;
+}
+
+body{
+    background: var(--bg);
 }
