@@ -22,12 +22,7 @@ li {
    /** color: black;
     background: #6967ee8a;**/
     --bg:var(--purple);
-    --fontColor:var(--black)
-}
-
-.dark-theme{
-    --bg:var(--black)
-    --fontColor:var(--purple)
+    --fontColor:var(--black);
 }
 
 :root{
@@ -35,6 +30,12 @@ li {
     --white: #ffffff;
     --black: #000000;
 }
+
+.dark-theme{
+    --bg:var(--black);
+    --fontColor:var(--purple);
+}
+
 /**o * se refere a todos os elementos da pagina **/
 * {
     color:  var(--fontColor);
